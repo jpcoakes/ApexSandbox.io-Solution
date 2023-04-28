@@ -9,6 +9,6 @@ public String reverseWordsInASentence(String sentence){
         lastSentence = lastSentence + newWord.reverse();
         revSent = revSent.removeStart(newWord);
     }
-    return lastSetence;
+    return lastSentence;
 
 }
