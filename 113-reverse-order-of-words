@@ -9,6 +9,6 @@ public String reverseWordsInASentence(String sentence){
         lastSentence = lastSentence + newWord + ' ';
         revSent = revSent.removeStart(revSent.substringBefore(' ')).trim();
     }
-    return lastSentence;
+    return lastSentence.trim();
 
 }
