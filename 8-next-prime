@@ -1,7 +1,7 @@
 public Integer nextPrime(Integer num) {
     //code here
     Boolean foundPrime = false;
-    n = num + 1;
+    Integer n = num + 1;
     while(!foundPrime){
         foundPrime = isPrime(n);
     }    
