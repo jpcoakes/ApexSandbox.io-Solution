@@ -7,7 +7,7 @@ public String reverseWordsInASentence(String sentence){
     for(Integer i = 1; i <= numWords; i++){
         String newWord = revSent.substringBefore(' ').reverse();
         lastSentence = lastSentence + newWord;
-        revSent = revSent.removeStart(newWord).trim();
+        revSent = revSent.removeStart(revSent.substringBefore(' ')).trim();
     }
     return lastSentence;
 
