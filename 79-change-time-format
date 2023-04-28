@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     //code here
     List<String> ls = strTime.split(':');
     Integer hour = Integer.valueOf(ls[0]);
-    Integer min = Integer.valueOf(ls[0]);
+    Integer min = Integer.valueOf(ls[1]);
     String suffix;
     if(hour > 12){
         hour = hour - 12;
