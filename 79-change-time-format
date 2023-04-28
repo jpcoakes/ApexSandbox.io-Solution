@@ -14,13 +14,13 @@ public String changeTimeFormat(String strTime) {
         hourString = String.valueOf(hour);
         suffix = ' AM';
     }
-    else{
-        hourString = '0' + String.valueOf(hour);
-        suffix = ' AM';
-    }
-    if(hour == 0){
+    else if(hour == 0){
         hour = 12;
         hourString = String.valueOf(hour);
+        suffix = ' AM';
+    }
+    else{
+        hourString = '0' + String.valueOf(hour);
         suffix = ' AM';
     }
     if(min < 10){
