@@ -1,8 +1,14 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
     String revSent = sentence.reverse();
-    String regExp = '[a-zA-Z]';
-    String revWords = revSent.replaceAll(regExp, revSent.substringBetween(' ',' '));
-    return revWords;
+    revSent = revSent.trim();
+    Integer numWords = revSent.countMatches(' ') + 1;
+    String lastSentence = '';
+    for(Integer i = 1; i <= numWords; i++){
+        String newWord = revSent.substringBetween(' ');
+        lastSentence = lastSentence + newWord.reverse();
+        revSent = revSent.removeStart(newWord);
+    }
+    return lastSetence;
 
 }
