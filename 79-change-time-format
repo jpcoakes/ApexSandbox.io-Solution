@@ -21,6 +21,7 @@ public String changeTimeFormat(String strTime) {
     if(hour == 0){
         hour = 12;
         hourString = String.valueOf(hour);
+        suffix = ' AM';
     }
     if(min < 10){
         minString = '0' + String.valueOf(min);
