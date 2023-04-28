@@ -2,7 +2,7 @@ public String reverseWordsInASentence(String sentence){
     //your flawless code here
     String revSent = sentence.reverse();
     String regExp = '[a-zA-Z]';
-    String revWords = revSent.replaceAll(regExp, substringBetween(' ',' ');
+    String revWords = revSent.replaceAll(regExp, substringBetween(' ',' '));
     return revWords;
 
 }
