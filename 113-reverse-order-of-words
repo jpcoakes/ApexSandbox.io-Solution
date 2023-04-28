@@ -5,9 +5,9 @@ public String reverseWordsInASentence(String sentence){
     Integer numWords = revSent.countMatches(' ') + 1;
     String lastSentence = '';
     for(Integer i = 1; i <= numWords; i++){
-        String newWord = revSent.substringBetween(' ');
+        String newWord = revSent.substringBetween(' ').reverse();
         lastSentence = lastSentence + newWord.reverse();
-        revSent = revSent.removeStart(newWord);
+        revSent = revSent.removeStart(newWord).trim();
     }
     return lastSentence;
 
