@@ -15,5 +15,6 @@ public String changeTimeFormat(String strTime) {
         hour = 12;
     }
     String finalString = String.valueOf(hour) + ':' + String.valueOf(min) + suffix;
+    return finalString;
 
 }
