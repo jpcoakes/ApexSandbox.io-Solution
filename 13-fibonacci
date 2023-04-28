@@ -1,8 +1,17 @@
 public Integer fibonacci(Integer n) {
     //code here
-    Integer sum;
+    
+    if(n == 1){
+        return 1;
+    }
+    if(n == 2){
+        return 1;
+    }
+    Integer sum = 1;
+    Integer prevNum = 0;
     for(Integer i = 1; i <= n; i++){
-        sum = sum + n;
+        sum = prevNum + sum;
+        prevNum = i;
     }
     return sum;
 }
