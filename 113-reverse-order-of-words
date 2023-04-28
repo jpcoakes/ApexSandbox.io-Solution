@@ -1,5 +1,8 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
+    if(sentence == nul){
+        return null;
+    }
     String revSent = sentence.reverse();
     revSent = revSent.trim();
     Integer numWords = revSent.countMatches(' ') + 1;
