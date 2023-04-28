@@ -6,7 +6,7 @@ public String changeTimeFormat(String strTime) {
     String suffix;
     String hourString;
     String minString;
-    if(hour > 12 && < 22){
+    if(hour > 12 && hour < 22){
         hour = hour - 12;
         hourString = '0' + String.valueOf(hour);
         suffix = ' PM';
