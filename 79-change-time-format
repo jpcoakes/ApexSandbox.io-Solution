@@ -21,6 +21,9 @@ public String changeTimeFormat(String strTime) {
     if(min < 10){
         minString = '0' + String.valueOf(min);
     }
+    else{
+        minString = String.valueOf(min);
+    }
     String finalString = hourString + ':' + minString + suffix;
     return finalString;
 
