@@ -15,5 +15,5 @@ public Integer fibonacci(Integer n) {
         second = first + second;
         first = temp;
     }
-    return sum;
+    return second;
 }
