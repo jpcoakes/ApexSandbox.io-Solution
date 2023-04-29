@@ -1,9 +1,9 @@
 public void createCourseAndClass(String name, String description) {
     // code here
-    /*if(description == null){
+    if(description == null){
         description = '';
-    }*/
-    apxio__Course__c course = new apxio__Course__c(Name = name, apxio__Course_Details__c = .?description);
+    }
+    apxio__Course__c course = new apxio__Course__c(Name = name, apxio__Course_Details__c = description);
     insert course;
     String truncated = description.left(255);
     apxio__Class__c child = new apxio__Class__c(Name = name, apxio__Description__c = truncated, apxio__Course__c = course.Id);
