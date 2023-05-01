@@ -10,7 +10,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         return accounts;
     }
     catch(IllegalArgumentException e){
-        return 'accounts should not be null';
+        System.debug('accounts should not be null');
     }
 }
 
