@@ -11,6 +11,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     catch(IllegalArgumentException e){
         System.debug('accounts should not be null');
+        return null;
     }
 }
 
