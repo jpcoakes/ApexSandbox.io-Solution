@@ -3,6 +3,10 @@ public List<Account> getAccounts(List<Account> accounts) {
     if(accounts == null){
         return null;
     }
+    List<Account> result = new List<Account>();
+    for(Account a: accounts){
+        result.add()
+    }
     accounts.sort();
     return accounts;
 }
