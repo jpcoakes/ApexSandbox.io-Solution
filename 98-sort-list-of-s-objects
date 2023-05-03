@@ -8,11 +8,9 @@ public List<Account> getAccounts(List<Account> accounts) {
         result.add(new AccountWrapper(a));
     }
     result.sort();
-    List<sObject> accList = new List<sObject>();
-    for(AccountWrapper aw : result){
-        accList.add(aw);
-    }
-    return accList;
+    String r = result.toString();
+    
+    
     
     
 }
