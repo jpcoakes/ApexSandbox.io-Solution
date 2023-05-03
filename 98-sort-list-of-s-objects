@@ -10,7 +10,8 @@ public List<Account> getAccounts(List<Account> accounts) {
     result.sort();
     List<Account> finalList = new List<Account>();
     for(AccountWrapper aw: result){
-        String str = JSON.serialize(aw);
+        //String str = JSON.serialize(aw);
+        String str = aw.toString();
         Account a = (Account)JSON.deserialize(str, Account.class);
         finalList.add(a);
     }
