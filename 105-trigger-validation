@@ -2,7 +2,7 @@ public void validateInsert(List<Opportunity> opportunities){
     //code here
     List<Opportunity> l = new List<Opportunity>();
     for(Opportunity o: opportunities){
-        if(o.StageName == 'Closed Won' && o.Description == null){
+        if(o.StageName == 'Closed Won' && (o.Description == null || o.Description == '')){
             o.addError('Description', 'Description should not be empty for Closed Won opportunity.');
             l.add(o);
         }
