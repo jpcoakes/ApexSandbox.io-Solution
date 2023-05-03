@@ -14,7 +14,7 @@ public class AccountWrapper implements Comparable {
         }
     }
     public Integer compareTo(Object compareTo){
-        AccountWrapper compareToAcc = (AccountWrapper)compareToAcc;
+        AccountWrapper compareToAcc = (AccountWrapper)compareTo;
         Integer returnValue = 0;
         if ((a.Amount == null) && (compareToAcc.a.Amount == null)) {
             // both wrappers have null Amounts
