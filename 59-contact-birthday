@@ -1,0 +1,9 @@
+public Boolean isBirthday(Contact c) {
+    //code here
+    if(Date.today().month() == c.Birthdate.month() &&  Date.today().day() == c.Birthdate.day()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
