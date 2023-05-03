@@ -2,6 +2,9 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {
     // code here
     List<sObject> result = new List<sObject>();
+    if(accounts == null && contacts == null){
+        return result;
+    }
     for(Account a: accounts){
         result.add(a);
     }
