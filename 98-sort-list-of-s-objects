@@ -25,6 +25,8 @@ public class Account implements Comparable {
     		throw ex;
         }
         a = acc;
+        name = acc.Name;
+        AnnualRevenue = acc.AnnualRevenue;
     }
     public Integer compareTo(Object compareTo){
         Account compareToAcc = (Account)compareTo;
