@@ -1,5 +1,8 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
+    if(accounts == null){
+        return null;
+    }
     accounts.sort();
     return accounts;
 }
@@ -8,7 +11,11 @@ public class AccountWrapper implements Comparable {
     public Account a;
 
     public AccountWrapper(Account acc){
-        
+        if(acc == null){
+            Exception ex = new NullPointerException();
+            ex.setMessage('Account argument cannot be null'); 
+    		throw ex;
+        }
         a = acc;
     }
     public Integer compareTo(Object compareTo){
