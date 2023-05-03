@@ -49,10 +49,10 @@ public class AccountWrapper implements Comparable {
             returnValue = 1;
         } else if (a.AnnualRevenue > compareToAcc.a.AnnualRevenue) {
             // Set return value to a positive value.
-            returnValue = 1;
+            returnValue = -1;
         } else if (a.AnnualRevenue < compareToAcc.a.AnnualRevenue) {
             // Set return value to a negative value.
-            returnValue = -1;
+            returnValue = 1;
         } 
         return returnValue;
     }
