@@ -12,6 +12,8 @@ public List<Account> getAccounts(List<Account> accounts) {
 // write extra class here 
 public class Account implements Comparable {
     public Account a;
+    public Integer AnnualRevenue;
+    public String Name;
 
     public Account(Account acc){
         if(acc == null){
