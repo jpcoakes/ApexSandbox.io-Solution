@@ -9,5 +9,4 @@ public void setAccountRating(Account a) {
     else{
         a.Rating = 'Hot';
     }
-    upsert a;
 }
