@@ -8,8 +8,13 @@ public List<Account> getAccounts(List<Account> accounts) {
         result.add(new AccountWrapper(a));
     }
     result.sort();
-    String r = result.toString();
-    
+    List<Account> finalList = new List<Account>();
+    for(AccountWrapper aw: result){
+        String str = JSON.serialize(aw);
+        Account a = (Account)JSON.deserialize(str);
+        finalList.add(a);
+    }
+    return finalList; 
     
     
     
