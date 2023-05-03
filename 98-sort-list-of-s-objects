@@ -16,19 +16,19 @@ public class AccountWrapper implements Comparable {
     public Integer compareTo(Object compareTo){
         AccountWrapper compareToAcc = (AccountWrapper)compareTo;
         Integer returnValue = 0;
-        if ((a.Amount == null) && (compareToAcc.a.Amount == null)) {
+        if ((a.AnnualRevenue == null) && (compareToAcc.a.AnnualRevenue == null)) {
             // both wrappers have null Amounts
             returnValue = 0;
-        } else if ((a.Amount == null) && (compareToAcc.a.Amount != null)){
+        } else if ((a.AnnualRevenue == null) && (compareToAcc.a.AnnualRevenue != null)){
             // nulls-first implementation
             returnValue = -1;
-        } else if ((a.Amount != null) && (compareToAcc.a.Amount == null)){
+        } else if ((a.AnnualRevenue != null) && (compareToAcc.a.AnnualRevenue == null)){
             // nulls-first implementation
             returnValue = 1;
-        } else if (a.Amount > compareToAcc.a.Amount) {
+        } else if (a.AnnualRevenue > compareToAcc.a.AnnualRevenue) {
             // Set return value to a positive value.
             returnValue = 1;
-        } else if (a.Amount < compareToAcc.a.Amount) {
+        } else if (a.AnnualRevenue < compareToAcc.a.AnnualRevenue) {
             // Set return value to a negative value.
             returnValue = -1;
         } 
