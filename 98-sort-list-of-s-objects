@@ -4,6 +4,9 @@ public List<Account> getAccounts(List<Account> accounts) {
         return null;
     }
     List<Account> result = new List<Account>();
+    for(Account a: accounts){
+        result.add(a);
+    }
     result.sort();
     return result;
     
