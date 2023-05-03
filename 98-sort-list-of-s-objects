@@ -13,12 +13,12 @@ public List<Account> getAccounts(List<Account> accounts) {
     
 }
 // write extra class here 
-public class Account implements Comparable {
+public class AccountWrapper implements Comparable {
     public Account a;
     public Integer AnnualRevenue;
     public String Name;
 
-    public Account(Account acc){
+    public AccountWrapper(Account acc){
         if(acc == null){
             Exception ex = new NullPointerException();
             ex.setMessage('Account argument cannot be null'); 
@@ -29,7 +29,7 @@ public class Account implements Comparable {
         AnnualRevenue = acc.AnnualRevenue;
     }
     public Integer compareTo(Object compareTo){
-        Account compareToAcc = (Account)compareTo;
+        AccountWrapper compareToAcc = (AccountWrapper)compareTo;
         Integer returnValue = 0;
         if ((a.AnnualRevenue == null) && (compareToAcc.a.AnnualRevenue == null)) {
             // both wrappers have null Amounts
