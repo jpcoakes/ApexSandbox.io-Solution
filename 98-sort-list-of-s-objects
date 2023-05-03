@@ -15,7 +15,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 // write extra class here 
 public class AccountWrapper implements Comparable {
     public Account a;
-    public Integer AnnualRevenue;
+    public Decimal AnnualRevenue;
     public String Name;
 
     public AccountWrapper(Account acc){
