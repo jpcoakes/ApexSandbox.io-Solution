@@ -3,9 +3,9 @@ public List<Account> getAccounts(List<Account> accounts) {
     if(accounts == null){
         return null;
     }
-    List<Account> result = new List<Account>();
+    List<AccountWrapper> result = new List<AccountWrapper>();
     for(Account a: accounts){
-        result.add(a);
+        result.add(new AccountWrapper(a));
     }
     result.sort();
     return result;
