@@ -2,7 +2,7 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
     //code here
     List<Integer> posList = new List<Integer>();
     for(Integer i: numbers){
-        if(numbers[i] >= 0){
+        if(numbers[i] > 0){
             posList.add(numbers[i]);
         }
     }
