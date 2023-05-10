@@ -7,7 +7,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         if(i == 1){
             count++;
         }
-        else if(i == 0){
+        else{
             if(count > result){
                 result = count;
             }
