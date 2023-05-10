@@ -5,11 +5,7 @@ public static Integer findLargest(List<Integer> nums) {
     if(nums == null){
         return null;
     }
-    
-    for(Integer i : nums){
-        if(nums[i] > nums[i+1]){
-            maxIndex = i;
-        }
-    }
-    return nums[maxIndex];
+    List<Integer> sortedList = nums.sort();
+    return sortedList[0];
+
 }
