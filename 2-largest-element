@@ -6,7 +6,7 @@ public static Integer findLargest(List<Integer> nums) {
         return null;
     }
     Integer i = 1;
-    for(i: nums){
+    for(i : nums){
         if(nums[i-1] > nums[i]){
             maxIndex = i-1;
         }
