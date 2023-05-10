@@ -6,6 +6,6 @@ public static Integer findLargest(List<Integer> nums) {
         return null;
     }
     nums.sort();
-    return nums[nums.size()];
+    return nums[nums.size()-1];
 
 }
