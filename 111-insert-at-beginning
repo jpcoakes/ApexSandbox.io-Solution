@@ -6,7 +6,7 @@ public void insertAtStart(String cityName, List<String> cities) {
         
     }
     cities.add('');
-    cities.set(length, cities[length-1]);
+    cities.set(length, cities[length]);
 
     cities.set(0,cityName);
 }
