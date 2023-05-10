@@ -2,13 +2,16 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     //code here
     //List<Integer> result = new List<Integer>();
     Integer count = 0;
-    Integer result;
+    Integer result = 0;
     for(Integer i : numbers){
         if(i == 1){
             count++;
         }
         else if(i == 0){
-            result = count;
+            if(count > result){
+                result = count;
+            }
+            count = 0;
         }
     }
     return result;
