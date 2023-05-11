@@ -3,10 +3,10 @@ public void insertAtStart(String cityName, List<String> cities) {
     Integer length = cities.size();
     for(Integer i = 0; i < length; i++){
         if(i == (length-1)){
-            cities.add(cities[length - 1]);
+            cities.add(cities.get(length - 1));
         }
         else{
-            cities.set((i+1), cities[i]);
+            cities.set((i+1), cities.get(i));
         }
     }
     cities.set(0,cityName);
