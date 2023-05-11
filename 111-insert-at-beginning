@@ -11,10 +11,10 @@ public void insertAtStart(String cityName, List<String> cities) {
                 cities.set(1, first);
             }
             else if(i == (length-1)){
-                cities.add(cities.get(length));
+                cities.add(cities.get(length - 1));
             }
             else{
-                cities.set((i+1), cities.get(i));
+                cities.set((i), cities.get(i-1));
             }
         }
 }
