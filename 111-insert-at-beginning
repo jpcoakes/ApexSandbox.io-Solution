@@ -5,7 +5,7 @@ public void insertAtStart(String cityName, List<String> cities) {
         cities.set(i+1, cities[i]);
         
     }
-    cities.add('');
+    //cities.add('');
     cities.set(length, cities[length]);
 
     cities.set(0,cityName);
