@@ -10,7 +10,7 @@ public void insertAtStart(String cityName, List<String> cities) {
             else if(i == 1){
                 cities.set(1, first);
             }
-            else if(i == (length)){
+            else if(i == (length - 1)){
                 cities.add(cities.get(length - 1));
             }
             else{
