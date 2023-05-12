@@ -1,20 +1,16 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
-    Integer length = cities.size();
-    String first;
-        for(Integer i = 0; i < length; i++){
-            if(i == 0){
-                first = cities[0];
-                cities.set(0,cityName);
-            }
-            else if(i == 1){
-                cities.set(1, first);
-            }
-            else if(i == (length - 1)){
-                cities.add(cities.get(length - 1));
-            }
-            else{
-                cities.set((i), cities.get(i-1));
-            }
+    for(Integer i = 0; i <= cities.length(); i++){
+        String shift = cities.get(i);
+        if(i == 0){
+            cities.set(i, cityName);
+            cities.set(1, shift);
         }
+        else if(i < cities.length()){
+            cities.set(i+1, shift);
+        }
+        else{
+            cities.add(shift);
+        }
+    }
 }
