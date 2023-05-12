@@ -2,8 +2,9 @@ public void insertAtStart(String cityName, List<String> cities) {
     //code here
     Integer length = cities.size() - 1;
     for(Integer i = 0; i <= length; i++){
-        String shift = cities.get(i);
+        
         if(i == 0){
+            String shift = cities.get(i);
             cities.set(i, cityName);
             cities.set(1, shift);
         }
@@ -11,6 +12,7 @@ public void insertAtStart(String cityName, List<String> cities) {
             cities.add(shift);
         }
         else{
+            String shift = cities.get(i);
             cities.set(i+1, shift);
         }
     }
