@@ -1,12 +1,12 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
-    for(Integer i = 0; i <= cities.length(); i++){
+    for(Integer i = 0; i <= cities.size(); i++){
         String shift = cities.get(i);
         if(i == 0){
             cities.set(i, cityName);
             cities.set(1, shift);
         }
-        else if(i < cities.length()){
+        else if(i < cities.size()){
             cities.set(i+1, shift);
         }
         else{
