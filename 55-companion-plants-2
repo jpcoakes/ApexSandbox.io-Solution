@@ -4,6 +4,9 @@ public Boolean companionPlants(List<String> plants) {
     if(plants.size() < 2){
         b = false;
     }
+    if(plants.size() < 1){
+        b = true;
+    }
     for(Integer i = 0; i < plants.size()-1; i++){
         if(!companionPlants(plants[i], plants[i+1])){
             b = false;
