@@ -1,8 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
     Boolean truth = true;
-    List<Integer> checkList = new List<Integer>();
-    checkList = numbers.sort();
+    List<Integer> checkList = numbers;
+    checkList.sort();
     for(Integer i : numbers){
         if(numbers[i] != checkList[i]){
             truth = false;
