@@ -3,7 +3,7 @@ public boolean isSorted(List<Integer> numbers) {
     Boolean truth = true;
     List<Integer> checkList = numbers;
     checkList.sort();
-    for(Integer i = 0; i < numbers; i++){
+    for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] != checkList[i]){
             truth = false;
         }
