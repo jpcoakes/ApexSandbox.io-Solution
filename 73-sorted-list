@@ -1,11 +1,32 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
     Boolean truth = true;
+    Boolean ascending;
+    Boolean descending;
     List<Integer> checkList = numbers;
     checkList.sort();
     for(Integer i = 0; i < numbers.size(); i++){
-        if(numbers[i] != checkList[i]){
-            truth = false;
+        if(ascending){
+            if(numbers[i] < numbers[i-1]){
+                truth = false;
+            }
+        }
+        else if(descending){
+            if(numbers[i] > numbers[i-1]){
+                truth = false;
+            }
+        }
+        else{
+            if(numbers[i] != checkList[i]){
+                if(numbers[i] > numbers[i-1]){
+                    // ascending
+                    ascending = true;
+                }
+                else if(numbers[i] < numbers[i-1]){
+                    // descending
+                    descending = true;
+                }
+            }
         }
     }
     return truth;
