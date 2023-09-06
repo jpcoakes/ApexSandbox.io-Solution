@@ -17,7 +17,7 @@ public boolean isSorted(List<Integer> numbers) {
             }
         }
         else{
-            if(numbers[i] != checkList[i]){
+            if(i > 0 && (numbers[i] != checkList[i])){
                 if(numbers[i] > numbers[i-1]){
                     // ascending
                     ascending = true;
