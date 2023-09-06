@@ -1,8 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
     Boolean truth = true;
-    Boolean ascending;
-    Boolean descending;
+    Boolean ascending = false;
+    Boolean descending = false;
     List<Integer> checkList = numbers;
     checkList.sort();
     for(Integer i = 0; i < numbers.size(); i++){
