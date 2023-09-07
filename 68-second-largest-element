@@ -6,5 +6,11 @@ public Integer secondLargest(List<Integer> numbers) {
         checkList.add(numbers[i]);
     }
     checkList.sort();
-    return checkList[size-1];
+    Integer finalIndex = size;
+    for(Integer i = size; i > 0; i--){
+        if(checkList[i] != checkList[i-1]){
+            finalIndex = i-1;
+        }
+    }
+    return checkList[finalIndex];
 }
