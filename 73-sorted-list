@@ -3,7 +3,7 @@ public boolean isSorted(List<Integer> numbers) {
     Boolean truth = true;
     Boolean ascending = false;
     Boolean descending = false;
-    Integer size = number.size();
+    Integer size = numbers.size();
     List<Integer> checkList = numbers;
     checkList.sort();
 
