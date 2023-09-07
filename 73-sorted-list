@@ -1,6 +1,5 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    Boolean truth = false;
     Boolean ascending = true;
     Boolean descending = true;
     Integer size = numbers.size();
