@@ -44,8 +44,8 @@ public boolean isSorted(List<Integer> numbers) {
         return truth;
     }*/
     if(size > 2){
-        for(Integer i = 1; i < size; i++){        
-            if((numbers[i] != checkList[i]) || (numbers[i] < numbers[i-1])){
+        for(Integer i = 0; i < size; i++){        
+            if(numbers[i] != checkList[i]){
                 truth = false;
             }        
         }
