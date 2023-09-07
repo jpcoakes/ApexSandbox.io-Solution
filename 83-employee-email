@@ -1,5 +1,10 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     //code here
-    String s = employeeIdToEmail.get(employeeId);
-    return s;
+    if(employeeIdToEmail.containsKey(employeeId)){
+        String s = employeeIdToEmail.get(employeeId);
+        return s;
+    }
+    else {
+        return 'info@apexsandbox.io';
+    }
 }
