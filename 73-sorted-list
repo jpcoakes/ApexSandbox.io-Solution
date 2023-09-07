@@ -56,7 +56,7 @@ public boolean isSorted(List<Integer> numbers) {
             if(numbers[i] > numbers[i-1]){
                 descending = false;
             }
-        })
+        }
         return (ascending || descending);
     }
     else{
