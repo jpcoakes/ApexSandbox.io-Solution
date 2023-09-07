@@ -1,18 +1,6 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
     Integer size = numbers.size();
-    /*List<Integer> checkList = new List<Integer>();
-    for(Integer i = 0; i < size; i++){
-        checkList.add(numbers[i]);
-    }
-    checkList.sort();
-    Integer finalIndex = size;
-    for(Integer i = size - 1; i > 0; i--){
-        if(checkList[i] != checkList[i-1]){
-            finalIndex = i-1;
-        }
-    }
-    return checkList[finalIndex];*/
     Integer bigNum = -2147483647 - 1;
     for(Integer i = 0; i < size; i++){
         if(numbers[i] > bigNum){
