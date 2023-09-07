@@ -6,6 +6,11 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     set2.addAll(nums2);
     Boolean b1 = set1.addAll(set2);
     Boolean b2 = set2.addAll(set1);
-    return !b1 || !b2;
+    if(b1 || b2){
+        return false;
+    }
+    else{
+        return true;
+    }
 
 }
