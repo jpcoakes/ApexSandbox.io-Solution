@@ -1,11 +1,6 @@
 public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     //code here
-    Set<Integer> finalSet = new Set<Integer>();
-    Integer size = set1.size();
-    for(Integer i = 0; i < size; i++){
-        if(set2.contains(set1[i]){
-            finalSet.add(set1[i]);
-        }
-    }
+    Set<Integer> finalSet = set1.clone();
+    Boolean result = finalSet.retainAll(set2)
     return finalSet;
 }
