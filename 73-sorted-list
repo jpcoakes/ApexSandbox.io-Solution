@@ -4,7 +4,10 @@ public boolean isSorted(List<Integer> numbers) {
     Boolean ascending = false;
     Boolean descending = false;
     Integer size = numbers.size();
-    List<Integer> checkList = numbers;
+    List<Integer> checkList = new List<Integer>();
+    for(Integer i = 0; i < size; i++){
+        checkList.add(numbers[i]);
+    }
     checkList.sort();
 
     /*if(size > 2){
@@ -49,7 +52,7 @@ public boolean isSorted(List<Integer> numbers) {
                 truth = false;
             }        
         }
-        return false;
+        return true;
     }
     else{
         return true;
