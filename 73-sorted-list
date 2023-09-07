@@ -7,7 +7,7 @@ public boolean isSorted(List<Integer> numbers) {
     List<Integer> checkList = numbers;
     checkList.sort();
 
-    if(size > 2){
+    /*if(size > 2){
         if(numbers[1] > numbers[0]){
             ascending = true;
         }
@@ -37,6 +37,17 @@ public boolean isSorted(List<Integer> numbers) {
                     }
                 }
             }
+        }
+        return truth;
+    }
+    else{
+        return truth;
+    }*/
+    if(size > 2){
+        for(Integer i = 1; i < size; i++){        
+            if(numbers[i] != checkList[i] || numbers[i] > numbers[i-1]){
+                truth = false;
+            }        
         }
         return truth;
     }
