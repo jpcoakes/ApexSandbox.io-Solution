@@ -1,0 +1,11 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    //code here
+    Set<Integer> s = new Set<Integer>();
+    s.addAll(nums);
+    if(s.size() != nums.size()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
