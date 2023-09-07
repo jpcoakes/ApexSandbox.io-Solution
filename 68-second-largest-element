@@ -1,0 +1,10 @@
+public Integer secondLargest(List<Integer> numbers) {
+    //code here
+    Integer size = numbers.size();
+    List<Integer> checkList = new List<Integer>();
+    for(Integer i = 0; i < size; i++){
+        checkList.add(numbers[i]);
+    }
+    checkList.sort();
+    return checkList[size-1];
+}
