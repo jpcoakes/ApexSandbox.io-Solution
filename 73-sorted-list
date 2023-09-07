@@ -45,7 +45,7 @@ public boolean isSorted(List<Integer> numbers) {
     }*/
     if(size > 2){
         for(Integer i = 1; i < size; i++){        
-            if(numbers[i] != checkList[i] || numbers[i] > numbers[i-1]){
+            if((numbers[i] != checkList[i]) || (numbers[i] > numbers[i-1])){
                 truth = false;
             }        
         }
