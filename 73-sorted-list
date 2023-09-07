@@ -3,31 +3,44 @@ public boolean isSorted(List<Integer> numbers) {
     Boolean truth = true;
     Boolean ascending = false;
     Boolean descending = false;
+    Integer size = number.size();
     List<Integer> checkList = numbers;
     checkList.sort();
-    for(Integer i = 0; i < numbers.size(); i++){
-        if(ascending){
-            if(numbers[i] < numbers[i-1]){
-                truth = false;
-            }
-        }
-        else if(descending){
-            if(numbers[i] > numbers[i-1]){
-                truth = false;
-            }
+
+    if(size > 2){
+        if(numbers[1] > numbers[0]){
+            ascending = true;
         }
         else{
-            if(numbers[i] != checkList[i]){
-                if(numbers[i] > numbers[i-1]){
-                    // ascending
-                    ascending = true;
+            descending = true;
+        }
+        for(Integer i = 0; i < numbers.size(); i++){
+            if(ascending){
+                if(numbers[i] < numbers[i-1]){
+                    truth = false;
                 }
-                else if(numbers[i] < numbers[i-1]){
-                    // descending
-                    descending = true;
+            }
+            else if(descending){
+                if(numbers[i] > numbers[i-1]){
+                    truth = false;
+                }
+            }
+            else{
+                if(numbers[i] != checkList[i]){
+                    if(numbers[i] > numbers[i-1]){
+                        // ascending
+                        ascending = true;
+                    }
+                    else if(numbers[i] < numbers[i-1]){
+                        // descending
+                        descending = true;
+                    }
                 }
             }
         }
+        return truth;
     }
-    return truth;
+    else{
+        return truth;
+    }
 }
