@@ -14,7 +14,7 @@ public boolean isSorted(List<Integer> numbers) {
         else{
             descending = true;
         }
-        for(Integer i = 0; i < numbers.size(); i++){
+        for(Integer i = 1; i < size; i++){
             if(ascending){
                 if(numbers[i] < numbers[i-1]){
                     truth = false;
