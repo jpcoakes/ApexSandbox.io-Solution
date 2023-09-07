@@ -52,7 +52,7 @@ public boolean isSorted(List<Integer> numbers) {
                 truth = false;
             }        
         }
-        return true;
+        return truth;
     }
     else{
         return true;
