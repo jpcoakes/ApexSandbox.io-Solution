@@ -4,7 +4,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     for(Account a : accounts){
         if(m.containsKey(a.Industry){
             Decimal d = m.get(a.Industry) + a.AnnualRevenue;
-            m.put(a.Industry, a.AnnualRevenue);
+            m.put(a.Industry, d);
         }
         else {
             m.put(a.Industry, a.AnnualRevenue);
