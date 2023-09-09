@@ -9,9 +9,14 @@ public class Stack {
     public Object pop() {
         //implement pop
         Integer i = stackList.size();
-        Object o = stackList.get(i-1);
-        stackList.remove(i-1);
+        if(i > 0){
+            Object o = stackList.get(i-1);
+            stackList.remove(i-1);
         return o;
+        }
+        else{
+            return null;
+        }
     }
     
     public Integer size() {
