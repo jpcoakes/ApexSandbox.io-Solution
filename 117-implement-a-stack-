@@ -27,7 +27,7 @@ public class Stack {
     
     public Boolean isEmpty() {
         //implement isEmpty
-        if(stackList != null){
+        if(stackList == null){
             return true;
         }
         else{
