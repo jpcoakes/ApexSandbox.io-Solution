@@ -9,7 +9,7 @@ public class Stack {
     public Object pop() {
         //implement pop
         Integer i = stackList.size();
-        Object o = stackList[i-1];
+        Object o = stackList.get(i-1);
         stackList.remove(i-1);
         return o;
     }
@@ -22,7 +22,7 @@ public class Stack {
     public Object peek(){
         //implement peek
         Integer i = stackList.size();
-        return stackList[i-1];
+        return stackList.get(i-1);
     }
     
     public Boolean isEmpty() {
